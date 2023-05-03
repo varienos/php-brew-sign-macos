@@ -1,4 +1,4 @@
-## Apache için macOS'ta homebrew PHP modülü nasıl imzalanır ?
+#Apache için macOS'ta homebrew PHP modülü nasıl imzalanır ?
 
 **1. Adım: Kod İmzalama için Sertifika Yetkilisi nasıl oluşturulur?** https://www.simplified.guide/macos/keychain-ca-code-signing-create 
 
