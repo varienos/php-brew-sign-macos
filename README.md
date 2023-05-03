@@ -1,9 +1,16 @@
 # Apache için macOS'ta homebrew PHP modülü nasıl imzalanır ?
 
-**1. Adım: Kod İmzalama için Sertifika Yetkilisi nasıl oluşturulur?** https://www.simplified.guide/macos/keychain-ca-code-signing-create 
+**1. Adım: Kod İmzalama için Sertifika Yetkilisi nasıl oluşturulur?** 
 
-**2. Adım: kod imzalama sertifikası nasıl oluşturulur?** https://www.simplified.guide/macos/keychain-cert-code-signing-create 
+https://www.simplified.guide/macos/keychain-ca-code-signing-create 
+
+**2. Adım: kod imzalama sertifikası nasıl oluşturulur?** 
+
+https://www.simplified.guide/macos/keychain-cert-code-signing-create 
 
 **3. Adım: Oluşturduğunuz kod imzalama sertifikası adıyla codesign kullanarak PHP modülünü imzalama**
 
-`codesign --sign "varienos" --force --keychain ~/Library/Keychains/login.keychain-db opt/homebrew/opt/php@7.4/lib/httpd/modules/libphp7.so`
+`codesign --sign "varienos" --force --keychain ~/Library/Keychains/login.keychain-db /opt/homebrew/opt/php@7.4/lib/httpd/modules/libphp7.so`
+
+**4. Adım: Apache Restart **
+`sudo apachectl -k restart`
