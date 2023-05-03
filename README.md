@@ -17,6 +17,6 @@ https://www.simplified.guide/macos/keychain-cert-code-signing-create 
 
 `LoadModule php7_module /opt/homebrew/opt/php@7.4/lib/httpd/modules/libphp7.so`
 
-**5. Adım: Apache Restart **
+**5. Adım: Apache Restart**
 
 `sudo apachectl -k restart`
