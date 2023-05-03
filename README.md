@@ -13,4 +13,5 @@ https://www.simplified.guide/macos/keychain-cert-code-signing-create 
 `codesign --sign "varienos" --force --keychain ~/Library/Keychains/login.keychain-db /opt/homebrew/opt/php@7.4/lib/httpd/modules/libphp7.so`
 
 **4. Adım: Apache Restart **
+
 `sudo apachectl -k restart`
